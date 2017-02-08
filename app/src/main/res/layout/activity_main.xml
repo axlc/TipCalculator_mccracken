@@ -8,28 +8,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackgroundLight"
+
     tools:context="com.example.monkey.tipcalculator_mccracken.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="@dimen/topPadding"
         android:id="@+id/price_tv"
+
+        android:textColor="@color/colorTextDark"
+        android:textSize="@dimen/textSizeMedium"
         android:text="@string/price_tv" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/price_tv"
+        android:id="@+id/entry_et"
+
         android:textStyle="italic"
         android:hint="@string/entry_et_hint"
-        android:id="@+id/entry_et" />
+        android:textColorHint="@color/colorTextDark" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/entry_et"
         android:id="@+id/calculate_btn"
+
+        android:background="@color/colorBackgroundDark"
+        android:textColor="@color/colorTextDark"
         android:text="@string/calculate_btn"/>
 
     <TextView
@@ -37,6 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/calculate_btn"
         android:id="@+id/result_tv"
+
+        android:textColor="@color/colorTextDark"
+        android:textSize="@dimen/textSizeMedium"
         />
 
 </RelativeLayout>

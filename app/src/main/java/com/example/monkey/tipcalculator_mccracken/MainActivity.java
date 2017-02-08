@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     // NOTE:  OnClickListener is an interface
     private View.OnClickListener onClickListener = new Button.OnClickListener() {
         public void onClick(View v) {
-            Log.i(tag, "onClick:");
+            Log.i(tag, "onClick: Method Entry");
 
             if (v.getId() == R.id.calculate_btn) {  // not needed with only one button!
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                Log.i(tag, "onClick:  text = [" + s + "]");
+                Log.i(tag, "onClick: text = [" + s + "]");
 
                 double entry = Double.parseDouble(s);
 
